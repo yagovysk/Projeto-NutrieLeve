@@ -42,3 +42,8 @@
 .carousel-card .control-dots .dot.selected {
   background-color: green; /* Cor da bolinha ativa */
 }
+@media (max-width: 768px) {
+  .section-card {
+    padding: 1rem 2rem;
+  }
+}

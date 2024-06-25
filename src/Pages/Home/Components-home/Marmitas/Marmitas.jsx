@@ -5,11 +5,11 @@ import "./Marmitas.css";
 
 export function Marmitas() {
   const sabores = [
-    "Marmita de Carne",
-    "Marmita de Frango",
-    "Marmita Vegetariana",
-    "Marmita de Peixe",
-    "Marmita Mista",
+    "1 - Cubos de frango com grão de bico, ervilha fresca, pimentão colorido e cubinhos de queijo, arroz integral, cenoura em palito assada;",
+    "2 - Quibe de forno de patinho com quinoa recheada com ricota e purê de abóbora;",
+    "3 - Mexido à mineira. Feito com filé suíno, linguiça de frango, arroz, feijão vermelho, cenoura e couve;",
+    "4 - filé de frango com tomate cereja e manjericão, creme de milho e seleta de legumes;",
+    "5 - escondidinho de carne de sol e mandioca.",
   ];
   const [quantities, setQuantities] = useState([0, 0, 0, 0, 0]);
 
@@ -48,6 +48,10 @@ export function Marmitas() {
 
   return (
     <section className="section-marmitas">
+      <article className="article-marmitas">
+        <h2>Marmitas da Semana DD/MM a DD/MM</h2>
+        <h3>Escolha e peça já suas marmitas</h3>
+      </article>
       <div className="card-marmitas">
         {quantities.map((quantity, index) => (
           <div key={index} className="marmita">
