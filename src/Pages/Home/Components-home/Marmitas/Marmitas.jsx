@@ -5,11 +5,11 @@ import "./Marmitas.css";
 
 export function Marmitas() {
   const sabores = [
-    "1 - Cubos de frango com grão de bico, ervilha fresca, pimentão colorido e cubinhos de queijo, arroz integral, cenoura em palito assada;",
-    "2 - Quibe de forno de patinho com quinoa recheada com ricota e purê de abóbora;",
-    "3 - Mexido à mineira. Feito com filé suíno, linguiça de frango, arroz, feijão vermelho, cenoura e couve;",
-    "4 - filé de frango com tomate cereja e manjericão, creme de milho e seleta de legumes;",
-    "5 - escondidinho de carne de sol e mandioca.",
+    "I - Cubos de frango com grão de bico, ervilha fresca, pimentão colorido e cubinhos de queijo, arroz integral, cenoura em palito assada",
+    "II - Quibe de forno de patinho com quinoa recheada com ricota e purê de abóbora",
+    "III - Mexido à mineira. Feito com filé suíno, linguiça de frango, arroz, feijão vermelho, cenoura e couve",
+    "IV - Filé de frango com tomate cereja e manjericão, creme de milho e seleta de legumes",
+    "V - Escondidinho de carne de sol e mandioca",
   ];
   const [quantities, setQuantities] = useState([0, 0, 0, 0, 0]);
 
@@ -36,10 +36,10 @@ export function Marmitas() {
         return null;
       })
       .filter(Boolean)
-      .join(", ");
+      .join("\n"); // Adiciona quebra de linha entre os itens
 
     const whatsappUrl = `https://wa.me/5561981774548?text=${encodeURIComponent(
-      `Olá, gostaria de pedir essa(s) marmita(s) ${message}`
+      `Olá, gostaria de pedir essa(s) marmita(s):\n\n${message}`
     )}`;
     window.open(whatsappUrl, "_blank");
   };
@@ -62,7 +62,7 @@ export function Marmitas() {
             >
               <RiSubtractLine />
             </button>
-            <span>{quantity}</span>
+            <span className="quantity">{quantity}</span>
             <button
               className="button-marmita"
               onClick={() => handleIncrement(index)}
