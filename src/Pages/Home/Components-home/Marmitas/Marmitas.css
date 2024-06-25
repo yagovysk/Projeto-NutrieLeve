@@ -1,0 +1,53 @@
+.section-marmitas {
+  background-image: url("../../../../assets/fundo-marmitas.svg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.card-marmitas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.marmita {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.marmita p {
+  color: #fff;
+  width: 10rem;
+}
+.button-marmita {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+  cursor: pointer;
+}
+
+.button-marmita:disabled {
+  background-color: #cccccc;
+}
+
+.button-order {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.button-order:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}

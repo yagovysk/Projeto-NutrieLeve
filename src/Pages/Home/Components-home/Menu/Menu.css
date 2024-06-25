@@ -1,0 +1,165 @@
+.nav-menu {
+  position: relative;
+  display: flex;
+  gap: 4rem;
+  padding: 1.3rem 0rem;
+  justify-content: space-around;
+  align-items: center;
+  height: 3rem;
+  width: 100%;
+  background: #f4f4f4;
+}
+.nav-menu .logo {
+  width: 5rem;
+}
+.menu-icon {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+.Menu-ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+.Menu-ul img {
+  width: 6rem;
+}
+.Menu-ul li {
+  cursor: pointer;
+  position: relative;
+  color: #333;
+  font-family: "Open sans", sans-serif;
+  font-size: 1.0625rem;
+  font-style: normal;
+  font-weight: 600;
+
+  transition: 0.3s;
+
+  z-index: 1;
+}
+
+.Menu-ul .button-menu {
+  position: relative;
+  cursor: pointer;
+  color: #333;
+  font-family: "Open sans", sans-serif;
+  font-size: 1.0625rem;
+  font-style: normal;
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+.Menu-ul li::before {
+  content: "";
+  position: absolute;
+  top: 1.5rem;
+  bottom: 0;
+  left: 0;
+  width: 0; /* Inicialmente sem largura */
+  height: 3px;
+  background-color: #008241;
+  transition: width 0.3s ease;
+  z-index: 1;
+}
+
+.Menu-ul li:hover::before {
+  width: 100%;
+  color: #008241;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 2rem;
+  border: 1px solid #008241;
+  padding: 0.625rem 1.5rem;
+  color: #008241;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.0625rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.64px;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.button:hover {
+  background: #02ac57;
+  color: #fff;
+  border: solid 1px #3f3b3b;
+}
+.button-menu {
+  text-decoration: none;
+}
+@media (max-width: 768px) {
+  .nav-menu {
+    display: flex;
+    justify-content: flex-start;
+    gap: 3rem !important;
+    height: 100%;
+    gap: 0;
+    padding: 0.5rem;
+  }
+  .nav-menu .logo {
+    width: 4rem;
+  }
+  .menu-icon {
+    display: flex;
+    padding: 0.5rem 0;
+    font-size: 1.5rem;
+    top: 17px;
+    right: 55px;
+  }
+  .Menu-ul {
+    position: absolute;
+    top: 0;
+    right: -2%;
+    background-color: white;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 200px;
+
+    height: 100vh;
+
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    gap: 1rem;
+    z-index: 3;
+  }
+
+  .Menu-ul.open {
+    transform: translateX(-10%);
+    z-index: 3;
+  }
+
+  .Menu-ul li {
+    width: 100%;
+    text-align: left;
+    padding: 15px 20px;
+    border-bottom: 1px solid #ccc;
+  }
+  .Menu-ul li::before {
+    display: none;
+  }
+  .button {
+    bottom: 8px;
+    padding: 0.5rem 1rem;
+
+    font-size: 0.8rem;
+  }
+  .menu-close-icon {
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    z-index: 3;
+  }
+}
