@@ -24,18 +24,47 @@ export function Menu() {
       </div>
       <ul className={`Menu-ul ${menuOpen ? "open" : ""}`}>
         <li>
-          <Link className="button-menu" to="/" onClick={closeMenu}>
+          <Link
+            smooth={true}
+            duration={500}
+            className="button-menu"
+            to="/"
+            onClick={closeMenu}
+          >
             Início
           </Link>
         </li>
         <li>
-          <Link className="button-menu" to="marmitas" onClick={closeMenu}>
+          <Link
+            smooth={true}
+            duration={500}
+            className="button-menu"
+            to="marmitas"
+            onClick={closeMenu}
+          >
             Marmitas da semana
           </Link>
         </li>
         <li>
-          <Link className="button-menu" to="about" onClick={closeMenu}>
+          <Link
+            smooth={true}
+            duration={500}
+            className="button-menu"
+            to="about"
+            onClick={closeMenu}
+          >
             Sobre Nós
+          </Link>
+        </li>
+        <li>
+          <Link
+            smooth={true}
+            duration={500}
+            className="button-menu"
+            to="depoiments"
+            onClick={closeMenu}
+          >
+            Depoimentos
           </Link>
         </li>
         <li>

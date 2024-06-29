@@ -16,7 +16,7 @@ const customStyles = {
     backgroundColor: "#fff",
     boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
     position: "absolute", // Para permitir posicionamento dinâmico
-    zIndex: 999,
+    zIndex: 9999,
   },
   overlay: {
     backgroundColor: "rgba(0, 0, 0, 0.5)",

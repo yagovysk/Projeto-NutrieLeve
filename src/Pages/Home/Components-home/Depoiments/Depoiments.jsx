@@ -32,7 +32,7 @@ export function Depoiments() {
   ];
 
   return (
-    <section className="section-depoiments">
+    <section id="depoiments" className="section-depoiments">
       <h2>Avaliações</h2>
       {isMobile ? (
         <Carousel

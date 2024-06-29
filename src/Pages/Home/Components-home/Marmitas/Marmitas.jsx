@@ -47,7 +47,7 @@ export function Marmitas() {
   const totalQuantity = quantities.reduce((acc, quantity) => acc + quantity, 0);
 
   return (
-    <section className="section-marmitas">
+    <section id="marmitas" className="section-marmitas">
       <article className="article-marmitas">
         <h2>Marmitas da Semana DD/MM a DD/MM</h2>
         <h3>Escolha e peça já suas marmitas</h3>
