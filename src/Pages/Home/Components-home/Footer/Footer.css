@@ -2,4 +2,12 @@
   width: 100%;
   background-color: #024508;
   box-shadow: 0 0 10px #03870e, 0 0 20px #03870e, 0 0 40px #03870e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer h4 {
+  font-family: "Roboto condensed", sans-serif;
+  color: #fff;
 }
