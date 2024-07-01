@@ -15,21 +15,21 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #bfd202;
+  color: #ebefc1;
 
   gap: 0.5rem;
 }
 .article-about h2 {
-  font-family: "handlee", cursive;
+  font-family: "Playwrite IT Moderna", cursive;
   line-height: 2.5rem;
   font-size: 3rem;
 }
 .article-about h3 {
-  font-family: "handlee", cursive;
-  font-size: 1.5rem;
+  font-family: "Playwrite IT Moderna", cursive;
+  font-size: 1.3rem;
 }
 .about-texts {
-  font-family: "Roboto condensed", sans-serif;
+  font-family: "Playwrite IT Moderna", cursive;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -63,5 +63,8 @@
   .article-about {
     width: 100%;
     text-align: center;
+    background-color: rgba(0, 0, 0, 0.347);
+    border-radius: 15px;
+    padding: 1rem 0;
   }
 }

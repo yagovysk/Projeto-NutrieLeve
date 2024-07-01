@@ -48,37 +48,39 @@ export function Marmitas() {
 
   return (
     <section id="marmitas" className="section-marmitas">
-      <article className="article-marmitas">
-        <h2>Marmitas da Semana DD/MM a DD/MM</h2>
-        <h3>Escolha e peça já suas marmitas</h3>
-      </article>
-      <div className="card-marmitas">
-        {quantities.map((quantity, index) => (
-          <div key={index} className="marmita">
-            <p>{sabores[index]}</p>
-            <button
-              className="button-marmita"
-              onClick={() => handleDecrement(index)}
-            >
-              <RiSubtractLine />
-            </button>
-            <span className="quantity">{quantity}</span>
-            <button
-              className="button-marmita"
-              onClick={() => handleIncrement(index)}
-            >
-              <FaPlus />
-            </button>
-          </div>
-        ))}
+      <div className="container-sombra">
+        <article className="article-marmitas">
+          <h2>Marmitas da Semana DD/MM a DD/MM</h2>
+          <h3>Escolha e peça já suas marmitas</h3>
+        </article>
+        <div className="card-marmitas">
+          {quantities.map((quantity, index) => (
+            <div key={index} className="marmita">
+              <p>{sabores[index]}</p>
+              <button
+                className="button-marmita"
+                onClick={() => handleDecrement(index)}
+              >
+                <RiSubtractLine />
+              </button>
+              <span className="quantity">{quantity}</span>
+              <button
+                className="button-marmita"
+                onClick={() => handleIncrement(index)}
+              >
+                <FaPlus />
+              </button>
+            </div>
+          ))}
+        </div>
+        <button
+          className="button-order"
+          onClick={handleOrder}
+          disabled={totalQuantity === 0}
+        >
+          Fazer Pedido
+        </button>
       </div>
-      <button
-        className="button-order"
-        onClick={handleOrder}
-        disabled={totalQuantity === 0}
-      >
-        Fazer Pedido
-      </button>
     </section>
   );
 }

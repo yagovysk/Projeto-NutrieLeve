@@ -13,11 +13,11 @@
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
-  color: #e3be04;
-  background-color: rgba(5, 8, 4, 0.61);
+  color: #58cd05;
+
   padding: 1rem;
   border-radius: 15px;
-  font-family: "handlee", cursive;
+  font-family: "Playwrite IT Moderna", cursive;
 }
 .article-marmitas h2 {
   font-size: 3rem;
@@ -34,9 +34,16 @@
   gap: 1rem;
   padding: 4rem;
   border-radius: 15px;
-  background-color: rgba(0, 0, 0, 0.681);
 }
-
+.container-sombra {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: rgba(5, 8, 4, 0.61);
+  border-radius: 10px;
+}
 .marmita {
   display: flex;
   gap: 2rem;
@@ -44,7 +51,7 @@
 }
 .marmita p {
   color: #fff;
-  font-family: "handlee", cursive;
+  font-family: "Playwrite DE Grund", cursive;
   font-weight: 700;
   width: 30rem;
 }
@@ -52,17 +59,17 @@
   color: #fff;
 }
 .button-marmita {
-  background-color: #e5260d;
+  background-color: #1d9206;
   border: none;
   border-radius: 10px;
-  color: rgb(207, 204, 7);
+  color: rgb(231, 231, 230);
   padding: 0.5rem 1rem;
   margin: 0.5rem 0;
   transition: 0.4s ease;
   cursor: pointer;
 }
 .button-marmita:hover {
-  background-color: #e6584d;
+  background-color: #37bb1c;
   transform: scale(1.1);
 }
 .button-order {
@@ -90,9 +97,13 @@
   }
   .article-marmitas h2 {
     font-size: 0.9rem;
+    text-align: center;
   }
   .article-marmitas h3 {
     font-size: 0.8rem;
+  }
+  .container-sombra {
+    padding: 1rem 0;
   }
   .card-marmitas {
     padding: 1rem;
@@ -101,7 +112,7 @@
     gap: 1rem;
   }
   .marmita p {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     width: 10rem;
   }
 }

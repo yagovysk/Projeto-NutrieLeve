@@ -1,5 +1,5 @@
-.footer img {
-  border: solid red;
+.footer {
   width: 100%;
-  height: 2rem;
+  background-color: #024508;
+  box-shadow: 0 0 10px #03870e, 0 0 20px #03870e, 0 0 40px #03870e;
 }
