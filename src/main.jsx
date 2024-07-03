@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Home } from "./Pages/Home/Home";
-import { Salgados } from "./Pages/Salgados/Salgados";
+import { SalgadosIndex } from "./Pages/Salgados";
 
 const router = createBrowserRouter([
   {
@@ -12,7 +12,7 @@ const router = createBrowserRouter([
 
   {
     path: "/salgados",
-    element: <Salgados />,
+    element: <SalgadosIndex />,
   },
 ]);
 ReactDOM.createRoot(document.getElementById("root")).render(
