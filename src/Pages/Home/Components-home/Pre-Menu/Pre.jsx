@@ -16,7 +16,7 @@ const customStyles = {
     backgroundColor: "#fff",
     boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
     position: "absolute", // Para permitir posicionamento dinâmico
-    zIndex: 9999,
+    zIndex: 99,
   },
   overlay: {
     backgroundColor: "rgba(0, 0, 0, 0.5)",
@@ -90,9 +90,16 @@ export function Pre() {
             Fechar
           </button>
           <ul>
-            <li>Local 1</li>
-            <li>Local 2</li>
-            <li>Local 3</li>
+            <li>Vicente Pires - gratuito</li>
+            <li>Águas Claras - R$ 10,00</li>
+            <li>Guará - R$ 15,00</li>
+            <li>Ceilândia - R$ 15,00</li>
+            <li>Samambaia - R$ 15,00</li>
+            <li>Asa Sul - R$ 15,00</li>
+            <li>Asa Norte - R$ 20,00</li>
+            <li>Lago Sul - R$ 20,00</li>
+            <li>Lago Norte - R$ 20,00</li>
+            <li>Demais localidades consultar.</li>
             {/* Adicione mais locais conforme necessário */}
           </ul>
         </div>
