@@ -59,13 +59,19 @@ export function Parceiros() {
             style={{
               transform: isMobile
                 ? "none"
-                : `translateX(${(index - activeIndex) * 100}%)`,
+                : `translateX(${(index - activeIndex) * 80}%)`,
               opacity: isMobile ? 1 : index === activeIndex ? 1 : 0.5,
               zIndex: isMobile ? 1 : index === activeIndex ? 1 : 0,
             }}
           >
             <a href={parceiro.url} target="_blank" rel="noopener noreferrer">
-              <img src={parceiro.img} alt={`Parceiro ${index + 1}`} />
+              <img
+                src={parceiro.img}
+                alt={`logo dos Parceiros, Terra Madre, Mercado Malunga e Bio Mundo ${
+                  index + 1
+                }`}
+                className="parceiro-img"
+              />
             </a>
           </div>
         ))}

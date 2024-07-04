@@ -36,8 +36,8 @@
 }
 
 .card-parceiros img {
-  width: 15rem;
-  height: auto;
+  width: 12rem !important;
+  height: auto !important;
 }
 
 @media (max-width: 768px) {
