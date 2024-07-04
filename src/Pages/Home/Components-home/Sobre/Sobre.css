@@ -2,6 +2,7 @@
   background-image: url("../../../../assets/fundo-about.svg");
   background-size: cover;
   display: flex;
+  flex-direction: row-reverse;
   gap: 10rem;
   padding: 8rem 9.5rem;
   align-items: center;
@@ -42,6 +43,28 @@
   overflow-y: scroll;
   padding-right: 1rem; /* Add some padding to avoid text getting hidden by scrollbar */
 }
+
+/* Custom scrollbar styles */
+.scrollable-text::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+.scrollable-text::-webkit-scrollbar-track {
+  background: #ebefc1; /* Background color of the scrollbar track */
+  border-radius: 10px; /* Rounded corners for the scrollbar track */
+}
+
+.scrollable-text::-webkit-scrollbar-thumb {
+  background-color: #0e3703; /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Rounded corners for the scrollbar thumb */
+  border: 2px solid #ebefc1; /* Padding around scrollbar thumb */
+}
+
+.scrollable-text::-webkit-scrollbar-corner,
+.scrollable-text::-webkit-scrollbar-button {
+  display: none; /* Hide the scrollbar arrows */
+}
+
 .about-button {
   display: flex;
   justify-content: center;
