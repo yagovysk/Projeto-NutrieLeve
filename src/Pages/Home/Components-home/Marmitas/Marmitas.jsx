@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { FaPlus } from "react-icons/fa";
 import { RiSubtractLine } from "react-icons/ri";
+import { IoLogoWhatsapp } from "react-icons/io5";
 import "./Marmitas.css";
 
 export function Marmitas() {
@@ -78,7 +79,7 @@ export function Marmitas() {
           onClick={handleOrder}
           disabled={totalQuantity === 0}
         >
-          Fazer Pedido
+          Fazer Pedido <IoLogoWhatsapp />
         </button>
       </div>
     </section>

@@ -9,6 +9,7 @@ export function Sobre() {
         <h3>Conheça nossa história</h3>
         <div className="about-texts">
           <div className="scrollable-text">
+            <h2>Nossa História</h2>
             <p>
               Após anos dedicados à nutrição, chegou o momento da aposentadoria.
               No entanto, ficar em casa não era o que eu queria. Com toda a
@@ -18,6 +19,7 @@ export function Sobre() {
               elogiavam e pediam mais. Percebi aí uma oportunidade para vender o
               produto, inicialmente para amigos.
             </p>
+            <h2>Inovações Saudáveis</h2>
             <p>
               Logo pensei em criar uma versão mais saudável do pão de queijo.
               Pesquisei sobre lanches saudáveis e descobri a coxinha protéica
@@ -26,6 +28,7 @@ export function Sobre() {
               surgir e fiz parceria com outra nutricionista, que trouxe ideias
               inovadoras, dando origem à Nutri e Leve.
             </p>
+            <h2>Nosso Diferencial</h2>
             <p>
               Nossa empresa se destacou ao oferecer opções deliciosas que
               atendem a diversas restrições alimentares, como bolos sem glúten e
@@ -34,6 +37,7 @@ export function Sobre() {
               gostosos, saudáveis e acessíveis. Meu marido também dizia que era
               difícil encontrar produtos como os nossos.
             </p>
+            <h2>Expansão e Compromisso</h2>
             <p>
               Com o tempo, percebi que poderíamos expandir nosso leque de
               produtos, incluindo marmitas saudáveis. Novamente, a família e os
@@ -42,6 +46,7 @@ export function Sobre() {
               soluções alimentares que contribuem para o bem-estar e a saúde dos
               nossos clientes.
             </p>
+            <h2>Agradecimento</h2>
             <p>
               Nossos produtos não são apenas uma opção, mas uma ferramenta para
               transformar hábitos e vidas. Obrigado por fazer parte dessa

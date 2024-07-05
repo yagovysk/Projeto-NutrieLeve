@@ -17,7 +17,7 @@
   justify-content: center;
   align-items: center;
   color: #ebefc1;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 .article-about h2 {
   font-family: "Playwrite IT Moderna", cursive;
@@ -39,6 +39,9 @@
   gap: 0.5rem;
 }
 .scrollable-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
   max-height: 20rem;
   overflow-y: scroll;
   padding-right: 1rem; /* Add some padding to avoid text getting hidden by scrollbar */
