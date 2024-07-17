@@ -50,22 +50,21 @@ export function Start() {
         }
       >
         <div className="container-content">
-          <img src={fundo} alt="Imagem 1" />
+          <img loading="lazy" src={fundo} alt="Imagem 1" />
           <article className="container-article">
             <p>Comida boa todo dia</p>
           </article>
         </div>
 
         <div className="container-content">
-          <img src={fundo2} alt="Imagem 1" />
-
+          <img loading="lazy" src={fundo2} alt="Imagem 2" />
           <article className="container-article">
             <p>Comida boa todo dia</p>
           </article>
         </div>
 
         <div className="container-content">
-          <img src={fundo3} alt="Imagem 1" />
+          <img loading="lazy" src={fundo3} alt="Imagem 3" />
           <article className="container-article">
             <p>Comida boa todo dia</p>
           </article>
