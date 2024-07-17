@@ -51,7 +51,7 @@ export function Marmitas() {
     <section id="marmitas" className="section-marmitas">
       <div className="container-sombra">
         <article className="article-marmitas">
-          <h2>Marmitas da Semana 15/07 a 19/07</h2>
+          <h2>Marmitas da Semana 16/07 a 22/07</h2>
           <h3>Escolha e peça já suas marmitas</h3>
         </article>
         <div className="card-marmitas">
