@@ -37,6 +37,14 @@ export function Footer() {
           <FaWhatsapp />
         </a>
       </div>
+      <a
+        className="tgv-button"
+        aria-label="botão que redireciona para o portfolio da empresa que desenvolveu o site, Empresa Togyro Group Victory."
+        href="https://togyrogroupvictory.com/"
+        target="blank"
+      >
+        Desenvolvido por Togyro <span>Group</span> Victory
+      </a>
       <h4>&#169; Todos os Direitos Reservados a Nutri e Leve.</h4>
     </footer>
   );

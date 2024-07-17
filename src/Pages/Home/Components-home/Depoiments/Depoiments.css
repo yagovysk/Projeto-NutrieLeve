@@ -46,7 +46,18 @@
   width: 3rem;
   border-radius: 100%;
 }
-
+.avaliation {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  gap: 0.2rem;
+  background-color: #fff;
+  color: #0e3703;
+  font-family: "Roboto condensed", sans-serif;
+  border: solid 2px black;
+  padding: 0.5rem 0.8rem;
+  border-radius: 5px;
+}
 @media (max-width: 768px) {
   .section-depoiments {
     padding: 5.5rem 1rem;

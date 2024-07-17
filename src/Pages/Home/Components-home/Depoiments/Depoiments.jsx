@@ -5,6 +5,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import foto1 from "../../../../assets/depoiments-1.png";
 import foto2 from "../../../../assets/depoiments-2.png";
 import foto3 from "../../../../assets/depoiments-3.jpg";
+import { FaGoogle } from "react-icons/fa";
 import "./Depoiments.css";
 
 export function Depoiments() {
@@ -67,6 +68,13 @@ export function Depoiments() {
           ))}
         </div>
       )}
+      <a
+        className="avaliation"
+        href="https://www.google.com/search?q=nutri+e+leve&sca_esv=7b18b02be1ed2b18&rlz=1C1CHBD_pt-PTBR1101BR1101&ei=aASYZsX1K8Sc1sQPyuSTmAg&ved=0ahUKEwjFyZvK0a6HAxVEjpUCHUryBIMQ4dUDCA8&uact=5&oq=nutri+e+leve&gs_lp=Egxnd3Mtd2l6LXNlcnAiDG51dHJpIGUgbGV2ZTIOEC4YgAQYxwEYjgUYrwEyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgIQJjIIEAAYgAQYogQyHRAuGIAEGMcBGI4FGK8BGJcFGNwEGN4EGOAE2AEBSNItULESWJoscAV4AJABAJgBzwGgAdsQqgEGMC4xMS4yuAEDyAEA-AEBmAISoAKREcICCxAAGIAEGLADGKIEwgIKEAAYgAQYQxiKBcICERAuGIAEGLEDGNEDGIMBGMcBwgILEAAYgAQYsQMYgwHCAgUQABiABMICCxAuGIAEGNEDGMcBwgIIEAAYgAQYsQPCAgUQLhiABMICDhAAGIAEGLEDGIMBGIoFwgIOEC4YgAQYsQMY0QMYxwHCAiAQLhiABBixAxjRAxiDARjHARiXBRjcBBjeBBjgBNgBAcICEBAAGIAEGLEDGEMYyQMYigXCAggQABiABBiSA8ICDRAAGIAEGLEDGEMYigXCAhAQABiABBixAxhDGIMBGIoFwgILEC4YgAQYxwEYrwHCAggQABgWGAoYHsICChAAGBYYChgeGA-YAwCIBgGQBgG6BgYIARABGBSSBwY1LjExLjKgB_5s&sclient=gws-wiz-serp"
+        target="blank"
+      >
+        <FaGoogle /> Avalie a gente e ganhe um muffin!
+      </a>
     </section>
   );
 }

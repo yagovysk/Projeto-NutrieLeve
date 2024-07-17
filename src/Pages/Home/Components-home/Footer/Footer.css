@@ -48,6 +48,22 @@
 .social-card a:hover {
   transform: translateY(-8px);
 }
+.tgv-button {
+  text-decoration: none;
+  font-family: "Roboto condensed", sans-serif;
+  font-weight: 600;
+  color: #fff;
+  display: flex;
+  transition: 0.5s ease;
+  display: flex;
+}
+.tgv-button span {
+  color: #ff073a;
+  display: flex;
+}
+.tgv-button:hover {
+  transform: translateY(-5px);
+}
 @media (max-width: 768px) {
   .footer {
     padding: 1rem 0;
@@ -68,5 +84,8 @@
   .footer h4 {
     text-align: center;
     font-size: 0.8rem;
+  }
+  .tgv-button {
+    font-size: 0.75rem;
   }
 }
