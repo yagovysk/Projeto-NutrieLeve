@@ -71,6 +71,10 @@
   .carousel {
     height: 20vh;
   }
+  .marmita-article {
+    left: 32%;
+    font-size: 1.1rem;
+  }
   .container-article {
     left: 32%;
     font-size: 1.1rem;
