@@ -64,7 +64,7 @@ export function Salgados() {
       .filter(Boolean)
       .join("\n");
 
-    const whatsappUrl = `https://wa.me/5561981774548?text=${encodeURIComponent(
+    const whatsappUrl = `https://wa.me/556199845648?text=${encodeURIComponent(
       `Olá, gostaria de pedir esse(s) salgado(s):\n\n${message}`
     )}`;
     window.open(whatsappUrl, "_blank");

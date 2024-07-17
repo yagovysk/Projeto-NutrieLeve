@@ -55,7 +55,10 @@ export function Sobre() {
           </div>
         </div>
         <div className="about-button">
-          <a href="" target="blank">
+          <a
+            href="https://wa.me/556199845648?text=Olá, vim pelo site, gostaria de mais informações."
+            target="blank"
+          >
             Clique aqui para experimentar
           </a>
         </div>

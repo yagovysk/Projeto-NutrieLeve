@@ -27,10 +27,13 @@ export function Footer() {
         </div>
       </article>
       <div className="social-card">
-        <a href="" target="blank">
+        <a href="https://www.instagram.com/nutrielevebsb/" target="blank">
           <FaInstagram />
         </a>
-        <a href="" target="blank">
+        <a
+          href="https://wa.me/556199845648?text=Olá, vim pelo site, gostaria de mais informações."
+          target="blank"
+        >
           <FaWhatsapp />
         </a>
       </div>

@@ -53,7 +53,7 @@ export function Pre() {
         </div>
         <div className="icon-container">
           <a
-            href="https://www.instagram.com/seu_instagram"
+            href="https://www.instagram.com/nutrielevebsb/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -62,7 +62,7 @@ export function Pre() {
         </div>
         <div className="icon-container">
           <a
-            href="https://wa.me/seu_numero_whatsapp"
+            href="https://wa.me/556199845648?text=Olá, vim pelo site, gostaria de mais informações."
             target="_blank"
             rel="noopener noreferrer"
           >

@@ -138,6 +138,15 @@
   cursor: no-drop;
 }
 @media (max-width: 768px) {
+  .container-sombra-salgados {
+    background-color: #ffffff00 !important;
+  }
+  .salgados {
+    background-color: #040303a2;
+  }
+  .doces {
+    background-color: #040303a2;
+  }
   .article-salgados h2 {
     font-size: 2rem;
   }

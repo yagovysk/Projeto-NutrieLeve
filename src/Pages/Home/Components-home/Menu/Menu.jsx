@@ -82,7 +82,10 @@ export function Menu() {
           <FaTimes />
         </div>
       )}
-      <a href="#" className="button">
+      <a
+        href="https://wa.me/556199845648?text=Olá, vim pelo site, gostaria de mais informações."
+        className="button"
+      >
         Entre em contato
       </a>
     </nav>
