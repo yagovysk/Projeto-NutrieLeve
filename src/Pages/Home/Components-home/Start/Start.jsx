@@ -2,7 +2,7 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { MdOutlineArrowForwardIos } from "react-icons/md";
 import { MdArrowBackIosNew } from "react-icons/md";
-import fundo from "../../../../assets/fundo1.svg";
+import fundo from "../../../../assets/fundo1.webp";
 import fundo2 from "../../../../assets/fundo2.png";
 import fundo3 from "../../../../assets/fundo3.png";
 import "./Start.css";
