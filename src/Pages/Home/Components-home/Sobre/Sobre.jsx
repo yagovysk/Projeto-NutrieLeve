@@ -1,4 +1,4 @@
-import photo from "../../../../assets/about-photo.png";
+import photo from "../../../../assets/sobre-img.png";
 import "./Sobre.css";
 
 export function Sobre() {

@@ -51,7 +51,7 @@ export function Start() {
       >
         <div className="container-content">
           <img loading="lazy" src={fundo} alt="Imagem 1" />
-          <article className="container-article">
+          <article className="marmita-article">
             <p>Comida boa todo dia</p>
           </article>
         </div>

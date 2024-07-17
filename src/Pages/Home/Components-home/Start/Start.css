@@ -39,15 +39,33 @@
   font-size: 2rem;
   color: #fff;
 }
+.marmita-article {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "handlee", cursive;
+  font-size: 2rem;
+  left: 42%;
+  gap: 1rem;
+  top: 10%;
+  color: #fff;
+}
 .container-article {
   position: absolute;
   display: flex;
+  flex-direction: column;
   font-family: "handlee", cursive;
   font-size: 2rem;
   left: 42%;
 
   top: 50%;
   color: #fff;
+}
+.marmita-article .img-marmita {
+  width: 15rem !important;
+  border-radius: 10px;
 }
 @media (max-width: 768px) {
   .carousel {

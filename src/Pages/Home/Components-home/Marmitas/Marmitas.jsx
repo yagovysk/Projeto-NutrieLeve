@@ -6,11 +6,11 @@ import "./Marmitas.css";
 
 export function Marmitas() {
   const sabores = [
-    "I - Cubos de frango com grão de bico, ervilha fresca, pimentão colorido e cubinhos de queijo, arroz integral, cenoura em palito assada",
-    "II - Quibe de forno de patinho com quinoa recheada com ricota e purê de abóbora",
-    "III - Mexido à mineira. Feito com filé suíno, linguiça de frango, arroz, feijão vermelho, cenoura e couve",
-    "IV - Filé de frango com tomate cereja e manjericão, creme de milho e seleta de legumes",
-    "V - Escondidinho de carne de sol e mandioca",
+    "I -  Kibe de patinho com quinoa recheado com ricota , abóbora e vagem passados no azeite e alho.",
+    "II - Iscas de frango aceboladas , penne de espinafre sem glúten com molho de queijo, cenoura em rodelas com gergelim.",
+    "III -Mexido à mineira . Feito com filé suíno, linguiça de frango, arroz integral , feijão vermelho e couve.",
+    "IV - Cubos de carne ao molho com chimichurre, arroz 7 grãos, brócolis no vapor.",
+    "V - Filé de frango a rolê  recheado com tirinha de pimentão , cenoura e bacon, purê de batata ,mix de legumes ( abobrinha, milho, couve, flor)",
   ];
   const [quantities, setQuantities] = useState([0, 0, 0, 0, 0]);
 
@@ -51,7 +51,7 @@ export function Marmitas() {
     <section id="marmitas" className="section-marmitas">
       <div className="container-sombra">
         <article className="article-marmitas">
-          <h2>Marmitas da Semana DD/MM a DD/MM</h2>
+          <h2>Marmitas da Semana 15/07 a 19/07</h2>
           <h3>Escolha e peça já suas marmitas</h3>
         </article>
         <div className="card-marmitas">

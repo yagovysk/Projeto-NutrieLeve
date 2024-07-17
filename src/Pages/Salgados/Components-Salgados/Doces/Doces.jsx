@@ -5,7 +5,6 @@ import { LuMilkOff } from "react-icons/lu";
 import { TbMilkOff } from "react-icons/tb";
 import { TbCubeOff } from "react-icons/tb";
 import { RiSubtractLine } from "react-icons/ri";
-import mesclado from "../../../../assets/mesclado.png";
 import coco from "../../../../assets/coco.png";
 import cenoura from "../../../../assets/cenoura.png";
 import muffin from "../../../../assets/muffin.png";
@@ -14,14 +13,6 @@ import banana from "../../../../assets/banana.png";
 
 export function Doces() {
   const salgados = [
-    {
-      description: "Bolinho Mesclado de Cacau e Coco ",
-      info: "Bolinho que combina o sabor do cacau e coco",
-      Embalagem: "Unidade de 55g (individual)",
-      Valor: "R$ 8,00",
-      image: mesclado,
-      icons: [<LuWheatOff />, <LuMilkOff />, <TbCubeOff />],
-    },
     {
       description: "Bolinho de Cenoura",
       info: "Opção de cenoura com cobertura de chocolate ou opção mesclado com cacau (sem cobertura)",
