@@ -1,14 +1,72 @@
 .footer {
   width: 100%;
-  background-color: #024508;
+  background-color: #37622d;
   box-shadow: 0 0 10px #03870e, 0 0 20px #03870e, 0 0 40px #03870e;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 0.5rem;
   padding: 1rem;
 }
 .footer h4 {
   font-family: "Roboto condensed", sans-serif;
   color: #fff;
+}
+.article-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  gap: 1rem;
+}
+.cards-pagamentos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Espaçamento entre os itens */
+}
+.cards-pagamentos img {
+  width: 5rem;
+  height: 3rem;
+  border-radius: 5px;
+}
+.social-card {
+  display: flex;
+
+  font-size: 2rem;
+  gap: 1rem;
+}
+.social-card a {
+  text-decoration: none;
+  color: #fff;
+  transition: 0.4s ease;
+}
+.social-card a:hover {
+  transform: translateY(-8px);
+}
+@media (max-width: 768px) {
+  .footer {
+    padding: 1rem 0;
+  }
+  .article-footer {
+    padding: 1rem 0;
+  }
+  .cards-pagamentos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .cards-pagamentos img {
+    width: 3rem;
+    height: 2rem;
+  }
+  .social-card {
+    font-size: 1.4rem;
+  }
+  .footer h4 {
+    text-align: center;
+    font-size: 0.8rem;
+  }
 }

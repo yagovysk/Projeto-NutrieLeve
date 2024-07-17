@@ -1,3 +1,20 @@
 .index-salgados {
   overflow-x: hidden;
+  background-color: #37622d;
+  padding: 1rem 0;
+}
+.container-salgadosEdoces {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.voltar-salgados {
+  text-decoration: none;
+  font-family: "Roboto condensed", sans-serif;
+  color: #fff;
+  margin-left: 1rem;
+  font-size: 1.5rem;
+  border: solid 2px #fff;
+  padding: 0.5rem;
+  border-radius: 5px;
 }

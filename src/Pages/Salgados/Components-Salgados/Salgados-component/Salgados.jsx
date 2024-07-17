@@ -1,33 +1,43 @@
-import { Link } from "react-router-dom";
 import { useState } from "react";
 import { FaPlus } from "react-icons/fa";
 import { RiSubtractLine } from "react-icons/ri";
+import { LuWheatOff } from "react-icons/lu";
+import { LuMilkOff } from "react-icons/lu";
+import { TbMilkOff } from "react-icons/tb";
+import { TbCubeOff } from "react-icons/tb";
+import coxinha from "../../../../assets/coxinha.png";
+import maromba from "../../../../assets/maromba.png";
+import empada from "../../../../assets/empada.png";
 import "./Salgados.css";
 
 export function Salgados() {
   const salgados = [
     {
-      description: "I - Salgado de Carne",
-      imageUrl: "URL_DA_IMAGEM_1",
+      description: "Coxinha Proteica",
+      info: "Salgado feito com frango e mandioca com recheio de frango.",
+      Embalagem: "Embalagem de 500g (média de 10 unidades)",
+      Valor: "R$ 41,00",
+      image: coxinha,
+      icons: [<LuWheatOff />, <LuMilkOff />],
     },
     {
-      description: "II - Salgado de Frango",
-      imageUrl: "URL_DA_IMAGEM_2",
+      description: "Salgado Maromba",
+      info: "Salgado feito de batata doce e frango com recheio de queijo muçarela",
+      Embalagem: "Embalagem de 500g (média de 10 unidades)",
+      Valor: "R$ 41,00",
+      image: maromba,
+      icons: [<LuWheatOff />, <LuMilkOff />],
     },
     {
-      description: "III - Salgado de queijo",
-      imageUrl: "URL_DA_IMAGEM_3",
-    },
-    {
-      description: "IV - Salgado de Legumes",
-      imageUrl: "URL_DA_IMAGEM_4",
-    },
-    {
-      description: "V - Salgado de mandioca",
-      imageUrl: "URL_DA_IMAGEM_5",
+      description: "Empada Fit",
+      info: "Empada com recheio de frango, alho poró, palmito e tomate confit",
+      Embalagem: "Embalagem de 400g (média de 8 unidades)",
+      Valor: "R$ 42,00",
+      image: empada,
+      icons: [<LuWheatOff />, <LuMilkOff />],
     },
   ];
-  const [quantities, setQuantities] = useState([0, 0, 0, 0, 0]);
+  const [quantities, setQuantities] = useState(Array(salgados.length).fill(0));
 
   const handleIncrement = (index) => {
     const newQuantities = [...quantities];
@@ -64,36 +74,59 @@ export function Salgados() {
 
   return (
     <section className="section-salgados">
-      <Link className="voltar-salgados" to="/">
-        Voltar
-      </Link>
       <div className="container-sombra-salgados">
+        <div className="icons-off">
+          <h4>
+            <LuMilkOff className="icon-off" /> sem leite
+          </h4>
+          <h4>
+            <LuWheatOff className="icon-off" /> sem glúten
+          </h4>
+          <h4>
+            <TbMilkOff className="icon-off" /> sem lactose
+          </h4>
+          <h4>
+            <TbCubeOff className="icon-off" /> sem açúcar
+          </h4>
+        </div>
         <article className="article-salgados">
           <h2>Salgados Fit</h2>
           <h3>Escolha e peça já seus salgados</h3>
         </article>
         <div className="card-salgados">
-          {quantities.map((quantity, index) => (
+          {salgados.map((salgado, index) => (
             <div key={index} className="salgados">
               <img
-                src={salgados[index].imageUrl}
-                alt={salgados[index].description}
+                src={salgado.image}
+                alt={salgado.description}
                 className="salgados-image"
               />
-              <p>{salgados[index].description}</p>
-              <button
-                className="button-salgados"
-                onClick={() => handleDecrement(index)}
-              >
-                <RiSubtractLine />
-              </button>
-              <span className="quantity-salgados">{quantity}</span>
-              <button
-                className="button-salgado"
-                onClick={() => handleIncrement(index)}
-              >
-                <FaPlus />
-              </button>
+              <p>{salgado.description}</p>
+              <p>{salgado.info}</p>
+              <p>{salgado.Embalagem}</p>
+              <span>{salgado.Valor}</span>
+              <div className="salgados-icons">
+                {salgado.icons.map((icon, iconIndex) => (
+                  <span className="icon-salgados" key={iconIndex}>
+                    {icon}
+                  </span>
+                ))}
+              </div>
+              <div className="buttons-salgados">
+                <button
+                  className="button-salgado"
+                  onClick={() => handleDecrement(index)}
+                >
+                  <RiSubtractLine />
+                </button>
+                <span className="quantity-salgados">{quantities[index]}</span>
+                <button
+                  className="button-salgado"
+                  onClick={() => handleIncrement(index)}
+                >
+                  <FaPlus />
+                </button>
+              </div>
             </div>
           ))}
         </div>

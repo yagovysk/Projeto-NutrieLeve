@@ -1,32 +1,69 @@
 import { useState } from "react";
 import { FaPlus } from "react-icons/fa";
+import { LuWheatOff } from "react-icons/lu";
+import { LuMilkOff } from "react-icons/lu";
+import { TbMilkOff } from "react-icons/tb";
+import { TbCubeOff } from "react-icons/tb";
 import { RiSubtractLine } from "react-icons/ri";
-import "./Doces.css";
+import mesclado from "../../../../assets/mesclado.png";
+import coco from "../../../../assets/coco.png";
+import cenoura from "../../../../assets/cenoura.png";
+import muffin from "../../../../assets/muffin.png";
+import chocolatudo from "../../../../assets/chocolatudo.png";
+import banana from "../../../../assets/banana.png";
 
 export function Doces() {
-  const doces = [
+  const salgados = [
     {
-      description: "I - Salgado de Carne",
-      imageUrl: "URL_DA_IMAGEM_1",
+      description: "Bolinho Mesclado de Cacau e Coco ",
+      info: "Bolinho que combina o sabor do cacau e coco",
+      Embalagem: "Unidade de 55g (individual)",
+      Valor: "R$ 8,00",
+      image: mesclado,
+      icons: [<LuWheatOff />, <LuMilkOff />, <TbCubeOff />],
     },
     {
-      description: "II - Salgado de Frango",
-      imageUrl: "URL_DA_IMAGEM_2",
+      description: "Bolinho de Cenoura",
+      info: "Opção de cenoura com cobertura de chocolate ou opção mesclado com cacau (sem cobertura)",
+      Embalagem: "Unidade de 55g (individual)",
+      Valor: "R$ 7,00",
+      image: cenoura,
+      icons: [<LuWheatOff />, <TbMilkOff />],
     },
     {
-      description: "III - Salgado de queijo",
-      imageUrl: "URL_DA_IMAGEM_3",
+      description: "Muffin de cacau",
+      info: "Muffin feito com cacau 100%",
+      Embalagem: "Unidade de 55g (individual)",
+      Valor: "R$ 8,00",
+      image: muffin,
+      icons: [<LuWheatOff />, <TbMilkOff />, <TbCubeOff />],
     },
     {
-      description: "IV - Salgado de Legumes",
-      imageUrl: "URL_DA_IMAGEM_4",
+      description: "Bolo Prestígio",
+      info: "Base de bolo de chocolate, recheio de coco natural, cremoso e cobertura de chocolate",
+      Embalagem: "Unidade de 400g e de 700g",
+      Valor: "R$ 39,00 (400g) R$ 82,00 (700g)",
+      image: coco,
+      icons: [<LuWheatOff />, <TbMilkOff />],
     },
     {
-      description: "V - Salgado de mandioca",
-      imageUrl: "URL_DA_IMAGEM_5",
+      description: "Bolo Chocolatudo",
+      info: "Bolo fofinho de chocolate com cobertura de chocolate cremoso",
+      Embalagem: "Unidade de 400g e de 800g",
+      Valor: "R$ 35,00 (400g) R$ 70,00 (700g)",
+      image: chocolatudo,
+      icons: [<LuWheatOff />, <TbMilkOff />, <TbCubeOff />],
+    },
+    {
+      description: "Bolo de Banana e Tâmara",
+      info: "Bolo fofinho de banana com cacau, adoçado naturalmente com tâmara",
+      Embalagem: "Unidade de 400g",
+      Valor: "R$ 32,00",
+      image: banana,
+      icons: [<LuWheatOff />, <LuMilkOff />, <TbCubeOff />],
     },
   ];
-  const [quantities, setQuantities] = useState([0, 0, 0, 0, 0]);
+  const [quantities, setQuantities] = useState(Array(salgados.length).fill(0));
 
   const handleIncrement = (index) => {
     const newQuantities = [...quantities];
@@ -46,7 +83,7 @@ export function Doces() {
     const message = quantities
       .map((quantity, index) => {
         if (quantity > 0) {
-          return `${doces[index].description}: ${quantity}`;
+          return `${salgados[index].description}: ${quantity}`;
         }
         return null;
       })
@@ -54,7 +91,7 @@ export function Doces() {
       .join("\n");
 
     const whatsappUrl = `https://wa.me/5561981774548?text=${encodeURIComponent(
-      `Olá, gostaria de pedir esse(s) doce(s):\n\n${message}`
+      `Olá, gostaria de pedir esse(s) doce(s) fit:\n\n${message}`
     )}`;
     window.open(whatsappUrl, "_blank");
   };
@@ -62,39 +99,65 @@ export function Doces() {
   const totalQuantity = quantities.reduce((acc, quantity) => acc + quantity, 0);
 
   return (
-    <section className="section-doces">
-      <div className="container-sombra-doces">
-        <article className="article-doces">
+    <section className="section-salgados">
+      <div className="container-sombra-salgados">
+        <div className="icons-off">
+          <h4>
+            <LuMilkOff className="icon-off" /> sem leite
+          </h4>
+          <h4>
+            <LuWheatOff className="icon-off" /> sem glúten
+          </h4>
+          <h4>
+            <TbMilkOff className="icon-off" /> sem lactose
+          </h4>
+          <h4>
+            <TbCubeOff className="icon-off" /> sem açúcar
+          </h4>
+        </div>
+        <article className="article-salgados">
           <h2>Doces Fit</h2>
-          <h3>Escolha e peça já seus docinhos</h3>
+          <h3>Escolha e peça já seus Doces fit</h3>
         </article>
-        <div className="card-doces">
-          {quantities.map((quantity, index) => (
+        <div className="card-salgados">
+          {salgados.map((salgado, index) => (
             <div key={index} className="doces">
               <img
-                src={doces[index].imageUrl}
-                alt={doces[index].description}
-                className="doces-image"
+                src={salgado.image}
+                alt={salgado.description}
+                className="salgados-image"
               />
-              <p>{doces[index].description}</p>
-              <button
-                className="button-doces"
-                onClick={() => handleDecrement(index)}
-              >
-                <RiSubtractLine />
-              </button>
-              <span className="quantity-doces">{quantity}</span>
-              <button
-                className="button-doce"
-                onClick={() => handleIncrement(index)}
-              >
-                <FaPlus />
-              </button>
+              <p>{salgado.description}</p>
+              <p>{salgado.info}</p>
+              <p>{salgado.Embalagem}</p>
+              <span>{salgado.Valor}</span>
+              <div className="salgados-icons">
+                {salgado.icons.map((icon, iconIndex) => (
+                  <span className="icon" key={iconIndex}>
+                    {icon}
+                  </span>
+                ))}
+              </div>
+              <div className="buttons-salgados">
+                <button
+                  className="button-salgado"
+                  onClick={() => handleDecrement(index)}
+                >
+                  <RiSubtractLine />
+                </button>
+                <span className="quantity-salgados">{quantities[index]}</span>
+                <button
+                  className="button-salgado"
+                  onClick={() => handleIncrement(index)}
+                >
+                  <FaPlus />
+                </button>
+              </div>
             </div>
           ))}
         </div>
         <button
-          className="pedir-doces"
+          className="pedir-salgados"
           onClick={handleOrder}
           disabled={totalQuantity === 0}
         >

@@ -45,7 +45,7 @@ export function Pre() {
 
   return (
     <div className="container-pre">
-      <h2>Indique e ganhe desconto!</h2>
+      <h2>A melhor marmita fit de Brasília!</h2>
       <div className="container-buttons">
         <div className="icon-container" ref={buttonRef} onClick={openModal}>
           <FaMapMarkerAlt className="icon" />

@@ -73,7 +73,7 @@ export function Menu() {
             to="/salgados"
             onClick={closeMenu}
           >
-            Salgados fit
+            Salgados & doces fit
           </RouterLink>
         </li>
       </ul>

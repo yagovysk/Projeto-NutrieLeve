@@ -1,7 +1,7 @@
 .container-pre {
   display: flex;
   width: 100%;
-  background-color: #0a5247;
+  background-color: #37622d;
   text-align: center;
   justify-content: space-around;
   padding: 20px;
@@ -107,7 +107,9 @@
     padding: 0.6rem 0.4rem;
   }
   .container-pre h2 {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
+    text-align: center;
+    margin-top: 0.3rem;
   }
   .icon {
     font-size: 1rem;

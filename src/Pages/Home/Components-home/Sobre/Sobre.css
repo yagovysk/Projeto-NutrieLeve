@@ -90,12 +90,21 @@
   .section-about img {
     width: 15rem;
   }
+  .article-about h2 {
+    font-size: 2rem;
+  }
+  .article-about h3 {
+    font-size: 1rem;
+  }
   .article-about {
     width: 100%;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.347);
     border-radius: 15px;
     padding: 1rem 0;
+  }
+  .about-texts {
+    font-size: 1rem;
   }
   .scrollable-text {
     max-height: 15rem; /* Adjust height for mobile */

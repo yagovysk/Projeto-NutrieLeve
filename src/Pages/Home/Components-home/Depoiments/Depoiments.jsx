@@ -13,19 +13,19 @@ export function Depoiments() {
   const depoiments = [
     {
       stars: "★★★★★",
-      text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, voluptatem ipsum enim praesentium excepturi itaque! Dicta, dolorum ducimus? Magni repellendus itaque minima asperiores a ab ducimus officiis corrupti fugiat cumque!",
+      text: "Só delícias. Podem ir que vale à pena!",
       img: foto1,
       name: "Carla Pinheiro",
     },
     {
       stars: "★★★★★",
-      text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, voluptatem ipsum enim praesentium excepturi itaque! Dicta, dolorum ducimus? Magni repellendus itaque minima asperiores a ab ducimus officiis corrupti fugiat cumque!",
+      text: "Empresa impecável, comida sempre gostosa e ingredientes muito selecionados!! Recomendo demaiss!!",
       img: foto2,
       name: "Violeta Barrocas",
     },
     {
       stars: "★★★★★",
-      text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, voluptatem ipsum enim praesentium excepturi itaque! Dicta, dolorum ducimus? Magni repellendus itaque minima asperiores a ab ducimus officiis corrupti fugiat cumque!",
+      text: "Atendimento perfeito, lanches excelentes!!! Recomendo muito, sem duvidas!",
       img: foto3,
       name: "Matheus Oliveira",
     },
