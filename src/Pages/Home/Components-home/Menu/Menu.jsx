@@ -85,6 +85,7 @@ export function Menu() {
       <a
         href="https://wa.me/556199845648?text=Olá, vim pelo site, gostaria de mais informações."
         className="button"
+        target="blank"
       >
         Entre em contato
       </a>
