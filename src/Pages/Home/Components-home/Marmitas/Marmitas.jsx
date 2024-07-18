@@ -6,11 +6,11 @@ import "./Marmitas.css";
 
 export function Marmitas() {
   const sabores = [
-    "I -  Quibe de patinho com quinoa recheado com ricota , abóbora e vagem passados no azeite e alho.",
-    "II - Iscas de frango aceboladas , penne de espinafre sem glúten com molho de queijo, cenoura em rodelas com gergelim.",
-    "III - Mexido à mineira. Feito com filé suíno, linguiça de frango, arroz integral, feijão vermelho e couve.",
-    "IV - Cubos de carne ao molho com chimichurre, arroz sete grãos, brócolis no vapor.",
-    "V - Filé de frango a rolê recheado com tirinha de pimentão, cenoura e bacon, purê de batata, mix de legumes (abobrinha, milho, couve-flor)",
+    "I -  Quibe de patinho com quinoa recheado com ricota , abóbora e vagem passados no azeite e alho. 350g",
+    "II - Iscas de frango aceboladas , penne de espinafre sem glúten com molho de queijo, cenoura em rodelas com gergelim. 350g",
+    "III - Mexido à mineira. Feito com filé suíno, linguiça de frango, arroz integral, feijão vermelho e couve. 350g",
+    "IV - Cubos de carne ao molho com chimichurre, arroz sete grãos, brócolis no vapor. 350g",
+    "V - Filé de frango a rolê recheado com tirinha de pimentão, cenoura e bacon, purê de batata, mix de legumes (abobrinha, milho, couve-flor). 350g",
   ];
 
   const precos = [21.0, 21.0, 21.0, 21.0, 21.0];
