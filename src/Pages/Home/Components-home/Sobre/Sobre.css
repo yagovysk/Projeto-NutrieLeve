@@ -80,6 +80,7 @@
   color: #0e3703;
   font-family: "Roboto condensed", sans-serif;
   padding: 0.5rem 0.8rem;
+  border: solid 2px black;
   border-radius: 5px;
 }
 @media (max-width: 768px) {
