@@ -40,8 +40,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
   padding: 1rem;
-  background-color: rgba(5, 8, 4, 0.61);
+  background-color: rgba(5, 8, 4, 0.699);
   border-radius: 10px;
 }
 .marmita {
@@ -90,13 +91,26 @@
   box-shadow: 0 0 20px 10px rgba(230, 224, 224, 0.634);
 }
 .button-order:disabled {
-  background-color: #a8f3a7;
+  background-color: #abb4ab;
   cursor: not-allowed;
   box-shadow: none;
 }
+.responsive-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.total {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  font-family: "Playwrite DE Grund", cursive;
+}
 @media (max-width: 768px) {
   .section-marmitas {
-    padding: 4rem 2rem;
+    padding: 4rem 1rem;
   }
   .article-marmitas h2 {
     font-size: 0.9rem;
@@ -112,10 +126,11 @@
     padding: 1rem;
   }
   .marmita {
+    flex-direction: column;
     gap: 1rem;
   }
   .marmita p {
-    font-size: 0.7rem;
-    width: 10rem;
+    font-size: 0.9rem;
+    width: 11rem;
   }
 }

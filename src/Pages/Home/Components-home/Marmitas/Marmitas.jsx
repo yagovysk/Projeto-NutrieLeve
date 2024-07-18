@@ -6,12 +6,15 @@ import "./Marmitas.css";
 
 export function Marmitas() {
   const sabores = [
-    "I -  Kibe de patinho com quinoa recheado com ricota , abóbora e vagem passados no azeite e alho.",
+    "I -  Quibe de patinho com quinoa recheado com ricota , abóbora e vagem passados no azeite e alho.",
     "II - Iscas de frango aceboladas , penne de espinafre sem glúten com molho de queijo, cenoura em rodelas com gergelim.",
-    "III -Mexido à mineira . Feito com filé suíno, linguiça de frango, arroz integral , feijão vermelho e couve.",
-    "IV - Cubos de carne ao molho com chimichurre, arroz 7 grãos, brócolis no vapor.",
-    "V - Filé de frango a rolê  recheado com tirinha de pimentão , cenoura e bacon, purê de batata ,mix de legumes ( abobrinha, milho, couve, flor)",
+    "III - Mexido à mineira. Feito com filé suíno, linguiça de frango, arroz integral, feijão vermelho e couve.",
+    "IV - Cubos de carne ao molho com chimichurre, arroz sete grãos, brócolis no vapor.",
+    "V - Filé de frango a rolê recheado com tirinha de pimentão, cenoura e bacon, purê de batata, mix de legumes (abobrinha, milho, couve-flor)",
   ];
+
+  const precos = [21.0, 21.0, 21.0, 21.0, 21.0];
+
   const [quantities, setQuantities] = useState([0, 0, 0, 0, 0]);
 
   const handleIncrement = (index) => {
@@ -32,20 +35,34 @@ export function Marmitas() {
     const message = quantities
       .map((quantity, index) => {
         if (quantity > 0) {
-          return `${sabores[index]}: ${quantity}`;
+          return `${sabores[index]}: ${quantity} x R$${precos[index].toFixed(
+            2
+          )} = R$${(quantity * precos[index]).toFixed(2)}`;
         }
         return null;
       })
       .filter(Boolean)
       .join("\n"); // Adiciona quebra de linha entre os itens
 
+    const totalPrice = quantities.reduce(
+      (acc, quantity, index) => acc + quantity * precos[index],
+      0
+    );
+
     const whatsappUrl = `https://wa.me/5561981774548?text=${encodeURIComponent(
-      `Olá, gostaria de pedir essa(s) marmita(s):\n\n${message}`
+      `Olá, gostaria de pedir essa(s) marmita(s):\n\n${message}\n\nTotal: R$${totalPrice.toFixed(
+        2
+      )}`
     )}`;
     window.open(whatsappUrl, "_blank");
   };
 
   const totalQuantity = quantities.reduce((acc, quantity) => acc + quantity, 0);
+
+  const totalPrice = quantities.reduce(
+    (acc, quantity, index) => acc + quantity * precos[index],
+    0
+  );
 
   return (
     <section id="marmitas" className="section-marmitas">
@@ -58,21 +75,28 @@ export function Marmitas() {
           {quantities.map((quantity, index) => (
             <div key={index} className="marmita">
               <p>{sabores[index]}</p>
-              <button
-                className="button-marmita"
-                onClick={() => handleDecrement(index)}
-              >
-                <RiSubtractLine />
-              </button>
-              <span className="quantity">{quantity}</span>
-              <button
-                className="button-marmita"
-                onClick={() => handleIncrement(index)}
-              >
-                <FaPlus />
-              </button>
+              <p>Preço: R${precos[index].toFixed(2)}</p>
+              <div className="responsive-button">
+                <button
+                  className="button-marmita"
+                  onClick={() => handleDecrement(index)}
+                >
+                  <RiSubtractLine />
+                </button>
+                <span className="quantity">{quantity}</span>
+                <button
+                  className="button-marmita"
+                  onClick={() => handleIncrement(index)}
+                >
+                  <FaPlus />
+                </button>
+              </div>
             </div>
           ))}
+        </div>
+        <div className="total">
+          <p>Total de marmitas: {totalQuantity}</p>
+          <p>Total a pagar: R${totalPrice.toFixed(2)}</p>
         </div>
         <button
           className="button-order"
