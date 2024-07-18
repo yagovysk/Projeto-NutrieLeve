@@ -50,8 +50,12 @@ export function Start() {
         }
       >
         <div className="container-content">
-          <img loading="lazy" src={fundo} alt="Imagem 1" />
-          <article className="marmita-article">
+          <img
+            loading="lazy"
+            src={fundo}
+            alt="fundo com duas marmitas fit uma sendo segurada na esquerda e a mesma na direita"
+          />
+          <article className="container-article">
             <p>Comida boa todo dia</p>
           </article>
         </div>
@@ -59,14 +63,14 @@ export function Start() {
         <div className="container-content">
           <img loading="lazy" src={fundo2} alt="Imagem 2" />
           <article className="container-article">
-            <p>Comida boa todo dia</p>
+            <p>Os melhores salgados fit</p>
           </article>
         </div>
 
         <div className="container-content">
           <img loading="lazy" src={fundo3} alt="Imagem 3" />
           <article className="container-article">
-            <p>Comida boa todo dia</p>
+            <p>Os melhores doces fit</p>
           </article>
         </div>
       </Carousel>
