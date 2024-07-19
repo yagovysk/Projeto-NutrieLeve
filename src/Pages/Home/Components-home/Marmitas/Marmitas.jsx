@@ -11,11 +11,14 @@ export function Marmitas() {
     "III - Mexido à mineira. Feito com filé suíno, linguiça de frango, arroz integral, feijão vermelho e couve. 350g",
     "IV - Cubos de carne ao molho com chimichurre, arroz sete grãos, brócolis no vapor. 350g",
     "V - Filé de frango a rolê recheado com tirinha de pimentão, cenoura e bacon, purê de batata, mix de legumes (abobrinha, milho, couve-flor). 350g",
+    "VI - Moqueca de tilápia, arroz de coco, brócolis no vapor. 350g",
+    "VII - Tilápia grelhada, legumes assados, purê de batata. 350g",
+    "VIII - Tilápia com banana da terra gratinada com molho branco, arroz integral, eleta de legumes. 350 g",
   ];
 
-  const precos = [21.0, 21.0, 21.0, 21.0, 21.0];
+  const precos = [21.0, 21.0, 21.0, 21.0, 21.0, 26.0, 26.0, 26.0];
 
-  const [quantities, setQuantities] = useState([0, 0, 0, 0, 0]);
+  const [quantities, setQuantities] = useState([0, 0, 0, 0, 0, 0, 0, 0]);
 
   const handleIncrement = (index) => {
     const newQuantities = [...quantities];
