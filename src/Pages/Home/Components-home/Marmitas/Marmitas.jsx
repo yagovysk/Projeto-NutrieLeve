@@ -49,7 +49,7 @@ export function Marmitas() {
       0
     );
 
-    const whatsappUrl = `https://wa.me/5561981774548?text=${encodeURIComponent(
+    const whatsappUrl = `https://wa.me/556199845648?text=${encodeURIComponent(
       `Olá, gostaria de pedir essa(s) marmita(s):\n\n${message}\n\nTotal: R$${totalPrice.toFixed(
         2
       )}`
