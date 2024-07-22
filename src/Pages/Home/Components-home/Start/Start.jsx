@@ -5,11 +5,19 @@ import { MdArrowBackIosNew } from "react-icons/md";
 import fundo from "../../../../assets/fundo1.webp";
 import fundo2 from "../../../../assets/fundo2.png";
 import fundo3 from "../../../../assets/fundo3.png";
+import { Helmet } from "react-helmet";
 import "./Start.css";
 
 export function Start() {
   return (
     <section className="section-start">
+      <Helmet>
+        <title>Nutri e Leve - Marmitas Fitness congeladas</title>
+        <meta
+          name="description"
+          content="Marmitas saudáveis, com sabores inegualáveis, a cada semana temos sabores diferentes, venham experimentar as melhores marmitas fit de Brasília."
+        />
+      </Helmet>
       <Carousel
         className="carousel"
         autoPlay
