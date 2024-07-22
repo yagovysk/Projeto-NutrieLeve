@@ -17,6 +17,10 @@ export function Start() {
           name="description"
           content="Marmitas saudáveis, com sabores inegualáveis, a cada semana temos sabores diferentes, venham experimentar as melhores marmitas fit de Brasília."
         />
+        <meta
+          name="google-site-verification"
+          content="Own4TXjLIoTk1lCvTOUdwzAZwN9-mtabezxoEZP66fo"
+        />
       </Helmet>
       <Carousel
         className="carousel"
