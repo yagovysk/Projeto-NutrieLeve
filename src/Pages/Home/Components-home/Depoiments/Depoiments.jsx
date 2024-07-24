@@ -22,7 +22,7 @@ export function Depoiments() {
       stars: "★★★★★",
       text: "Empresa impecável, comida sempre gostosa e ingredientes muito selecionados!! Recomendo demaiss!!",
       img: foto2,
-      name: "Violeta Barrocas",
+      name: "Tatiana Pinheiro",
     },
     {
       stars: "★★★★★",
