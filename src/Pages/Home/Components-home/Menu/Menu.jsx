@@ -28,17 +28,6 @@ export function Menu() {
             smooth={true}
             duration={500}
             className="button-menu"
-            to="/"
-            onClick={closeMenu}
-          >
-            Início
-          </Link>
-        </li>
-        <li>
-          <Link
-            smooth={true}
-            duration={500}
-            className="button-menu"
             to="marmitas"
             onClick={closeMenu}
           >
