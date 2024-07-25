@@ -6,11 +6,11 @@ import "./Marmitas.css";
 
 export function Marmitas() {
   const sabores = [
-    "I -  Quibe de patinho com quinoa recheado com ricota , abóbora e vagem passados no azeite e alho. 350g",
-    "II - Iscas de frango aceboladas , penne de espinafre sem glúten com molho de queijo, cenoura em rodelas com gergelim. 350g",
-    "III - Mexido à mineira. Feito com filé suíno, linguiça de frango, arroz integral, feijão vermelho e couve. 350g",
-    "IV - Cubos de carne ao molho com chimichurre, arroz sete grãos, brócolis no vapor. 350g",
-    "V - Filé de frango a rolê recheado com tirinha de pimentão, cenoura e bacon, purê de batata, mix de legumes (abobrinha, milho, couve-flor). 350g",
+    "I - Torta de frango gratinada com queijo (sem farinha ), creme de milho com espinafre.",
+    "II - Carne desfiada, purê de banana da terra, farofa de feijão fradinho com couve.",
+    "III - Filé de frango grelhado, arroz de couve flor cremoso com vagem e cenoura (low carb)",
+    "IV - Patinho moído, arroz integral, mix de legumes com alho, feijão carioca.",
+    "V - Almôndegas de frango com quinoa ao molho de tomate e manjericão, arroz integral com legumes.",
     "VI - Moqueca de tilápia, arroz de coco, brócolis no vapor. 350g",
     "VII - Tilápia grelhada, legumes assados, purê de batata. 350g",
     "VIII - Tilápia com banana da terra gratinada com molho branco, arroz integral, eleta de legumes. 350 g",
