@@ -6,11 +6,11 @@ import "./Marmitas.css";
 
 export function Marmitas() {
   const sabores = [
-    "I - Coxa e sobrecoxa desossada assada com molho de maracujá, arroz 7 grãos, picadinho de legumes com alho. 350g",
-    "II - Arroz integral com lentilha e carne desfiada, brócolis e cenoura. 350g",
-    "III - Filé de frango à pizzaiolo, purê de batata e legumes assados. 350g",
-    "IV - Escondidinho de carne de sol com mandioca. 350g",
-    "V - Cubinhos de frango acebolados, arroz integral, beterraba com cebolinha e feijão preto. 350g",
+    "I - Strogonoff de frango, arroz com brócolis. 350g",
+    "II - Carne de sol desfiada, purê de abóbora e salada de feijão fradinho. 350g",
+    "III - Patinho moído com hortelã, pasta de grão de bico, caponata de berinjela. 350g",
+    "IV - Isca  de frango grelhada com  pimentão colorido, arroz integral, mix de vagem, cenoura, milho e lentilha. 350g",
+    "V - Filé mignon suíno assado com molho chimichurri, batata saute, couve flor. 350g",
     "VI - Moqueca de tilápia, arroz de coco, brócolis no vapor. 350g",
     "VII - Tilápia grelhada, legumes assados, purê de batata. 350g",
     "VIII - Tilápia com banana da terra gratinada com molho branco, arroz integral, eleta de legumes. 350 g",
@@ -71,7 +71,7 @@ export function Marmitas() {
     <section id="marmitas" className="section-marmitas">
       <div className="container-sombra">
         <article className="article-marmitas">
-          <h2>Marmitas da Semana 09/08 a 15/08</h2>
+          <h2>Marmitas da Semana 16/08 a 22/08</h2>
           <h3>Escolha e peça já suas marmitas</h3>
         </article>
         <div className="card-marmitas">
