@@ -6,11 +6,11 @@ import "./Marmitas.css";
 
 export function Marmitas() {
   const sabores = [
-    "I - Strogonoff de frango, arroz com brócolis. 350g",
-    "II - Carne de sol desfiada, purê de abóbora e salada de feijão fradinho. 350g",
-    "III - Patinho moído com hortelã, pasta de grão de bico, caponata de berinjela. 350g",
-    "IV - Isca  de frango grelhada com  pimentão colorido, arroz integral, mix de vagem, cenoura, milho e lentilha. 350g",
-    "V - Filé mignon suíno assado com molho chimichurri, batata saute, couve flor. 350g",
+    "I - Filé mignon com molho de mostarda, arroz verde (brócolis, ervilha, salsinha e cebolinha). 350g",
+    "II - Frango em cubo ao molho de tomate com grão de bico, arroz integral, cenoura em rodelas. 350g",
+    "III - Coxa e sobrecoxa desossada grelhada, arroz com açafrão e banana terra, lentilha refogada. 350g",
+    "IV - IEspaguete sem glúten à bolonhesa, com molho branco e queijo.  350g",
+    "V - Filé de frango com molho de ricota, legumes com quinoa vermelha e alho (batata inglesa, abóbora, milho, abobrinha e quinoa). 350g",
     "VI - Moqueca de tilápia, arroz de coco, brócolis no vapor. 350g",
     "VII - Tilápia grelhada, legumes assados, purê de batata. 350g",
     "VIII - Tilápia com banana da terra gratinada com molho branco, arroz integral, eleta de legumes. 350 g",
