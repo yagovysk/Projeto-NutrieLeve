@@ -71,9 +71,7 @@ export function Marmitas() {
     const messageMarmitas = quantities
       .map((quantity, index) => {
         if (quantity > 0) {
-          return `${sabores[index]}: ${quantity} x R$${precos[index].toFixed(
-            2
-          )} = R$${(quantity * precos[index]).toFixed(2)}`;
+          return `${sabores[index]}: ${quantity} unidade(s)`;
         }
         return null;
       })
@@ -83,21 +81,23 @@ export function Marmitas() {
     const messageCaldos = quantitiesCaldos
       .map((quantity, index) => {
         if (quantity > 0) {
-          return `${caldos[index]}: ${quantity} x R$${precosCaldos[
-            index
-          ].toFixed(2)} = R$${(quantity * precosCaldos[index]).toFixed(2)}`;
+          return `${caldos[index]}: ${quantity} unidade(s)`;
         }
         return null;
       })
       .filter(Boolean)
       .join("\n");
 
+    const marmitasMessage = quantities.every((quantity) => quantity === 0)
+      ? "Marmita não foi selecionada"
+      : `Marmitas:\n${messageMarmitas}`;
+
     const caldosMessage = quantitiesCaldos.every((quantity) => quantity === 0)
-      ? "Caldos: 0"
+      ? "Caldo não foi selecionado"
       : `Caldos:\n${messageCaldos}`;
 
     const whatsappUrl = `https://wa.me/556199845648?text=${encodeURIComponent(
-      `Olá, gostaria de pedir:\n\nMarmitas:\n${messageMarmitas}\n\n${caldosMessage}\n\nTotal: R$${totalPrice.toFixed(
+      `Olá, gostaria de pedir:\n\n${marmitasMessage}\n\n${caldosMessage}\n\nTotal a pagar: R$${totalPrice.toFixed(
         2
       )}`
     )}`;
