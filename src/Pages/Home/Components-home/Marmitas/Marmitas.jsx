@@ -92,8 +92,12 @@ export function Marmitas() {
       .filter(Boolean)
       .join("\n");
 
+    const caldosMessage = quantitiesCaldos.every((quantity) => quantity === 0)
+      ? "Caldos: 0"
+      : `Caldos:\n${messageCaldos}`;
+
     const whatsappUrl = `https://wa.me/556199845648?text=${encodeURIComponent(
-      `Olá, gostaria de pedir:\n\nMarmitas:\n${messageMarmitas}\n\nCaldos:\n${messageCaldos}\n\nTotal: R$${totalPrice.toFixed(
+      `Olá, gostaria de pedir:\n\nMarmitas:\n${messageMarmitas}\n\n${caldosMessage}\n\nTotal: R$${totalPrice.toFixed(
         2
       )}`
     )}`;
