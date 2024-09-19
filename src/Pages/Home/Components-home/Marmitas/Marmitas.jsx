@@ -6,11 +6,11 @@ import "./Marmitas.css";
 
 export function Marmitas() {
   const sabores = [
-    "I - Almôndegas de patinho, molho de tomate e queijo e espaguete sem glúten. 350g",
-    "II -  Filé de coxa e sobrecoxa desossado assado com legumes, arroz com lentilha. 350g",
-    "III - Filé suíno com molho barbecue caseiro, aipim cozido, tropeiro funcional. 350g",
-    "IV - Filé de frango com molho mostarda (base do molho é inhame ), arroz integral com legumes. 350g",
-    "V - Baião de dois, feito com carne de sol desfiada, feijão vermelho, cenoura, queijo coalho e banana da terra. 350g",
+    "I - Cubinhos de frango com cenoura, brócolis e ervilha cobertos com creme de batata. 350g",
+    "II - Patinho moído com vagem, milho e tomate, arroz integral e feijão carioca. 350g",
+    "III - Tirinhas de alcatra aceboladas, arroz com grãos, mix de legumes refogados com alho e azeite. 350g",
+    "IV - Filé de frango à rolê sem bacon, arroz com alho poró e ratatouille. 350g",
+    "V -  Quibe de forno de patinho moído com quinoa, recheado com ricota e abóbora assada. 350g",
     "VI - Moqueca de tilápia, arroz de coco, brócolis no vapor. 350g",
     "VII - Tilápia grelhada, legumes assados, purê de batata. 350g",
     "VIII - Tilápia com banana da terra gratinada com molho branco, arroz integral, seleta de legumes. 350g",
