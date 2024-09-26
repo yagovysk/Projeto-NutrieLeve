@@ -100,7 +100,6 @@ export function Pre() {
             <li>Lago Sul - R$ 20,00</li>
             <li>Lago Norte - R$ 20,00</li>
             <li>Demais localidades consultar.</li>
-            {/* Adicione mais locais conforme necessário */}
           </ul>
         </div>
       </Modal>
