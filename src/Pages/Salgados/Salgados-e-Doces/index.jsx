@@ -47,10 +47,11 @@ const ProductCard = ({ product, quantity, onIncrement, onDecrement }) => (
       alt={product.description}
       className="produto-image"
     />
-    <p>{product.description}</p>
-    <p>{product.info}</p>
-    <p>{product.Embalagem}</p>
-    <span>{formatCurrency(product.Valor)}</span> {/* Formatação de moeda */}
+    <p className="produto-descricao">{product.description}</p>
+    <p className="produto-info">{product.info}</p>
+    <p className="produto-embalagem">{product.Embalagem}</p>
+    <span className="produto-valor">{formatCurrency(product.Valor)}</span>{" "}
+    {/* Formatação de moeda */}
     <div className="produto-icons">
       {product.icons.map((icon, index) => (
         <span className="icon-produto" key={index}>
@@ -125,20 +126,38 @@ export function Produtos() {
         icons: [<LuWheatOff />, <TbMilkOff />, <TbCubeOff />],
       },
       {
-        id: "prestigio",
-        description: "Bolo Prestígio",
+        id: "prestigio-400g",
+        description: "Bolo Prestígio 400g",
         info: "Base de bolo de chocolate, recheio de coco natural, cremoso e cobertura de chocolate",
-        Embalagem: "Unidade de 400g e de 700g",
-        Valor: 39.0, // Considerando valor do menor tamanho
+        Embalagem: "Unidade de 400g",
+        Valor: 39.0,
         image: coco,
         icons: [<LuWheatOff />, <TbMilkOff />],
       },
       {
-        id: "chocolatudo",
-        description: "Bolo Chocolatudo",
+        id: "prestigio-700g",
+        description: "Bolo Prestígio 700g",
+        info: "Base de bolo de chocolate, recheio de coco natural, cremoso e cobertura de chocolate",
+        Embalagem: "Unidade de 700g",
+        Valor: 82.0,
+        image: coco,
+        icons: [<LuWheatOff />, <TbMilkOff />],
+      },
+      {
+        id: "chocolatudo-400g",
+        description: "Bolo Chocolatudo 400g",
         info: "Bolo fofinho de chocolate com cobertura de chocolate cremoso",
-        Embalagem: "Unidade de 400g e de 800g",
-        Valor: 35.0, // Considerando valor do menor tamanho
+        Embalagem: "Unidade de 400g",
+        Valor: 35.0,
+        image: chocolatudo,
+        icons: [<LuWheatOff />, <TbMilkOff />, <TbCubeOff />],
+      },
+      {
+        id: "chocolatudo-800g",
+        description: "Bolo Chocolatudo 800g",
+        info: "Bolo fofinho de chocolate com cobertura de chocolate cremoso",
+        Embalagem: "Unidade de 800g",
+        Valor: 70.0,
         image: chocolatudo,
         icons: [<LuWheatOff />, <TbMilkOff />, <TbCubeOff />],
       },
@@ -178,6 +197,25 @@ export function Produtos() {
     }));
   };
 
+  // Função auxiliar para calcular o total sem duplicação
+  const selectedTotal = () => {
+    let total = 0;
+    Object.keys(quantities).forEach((id) => {
+      const quantity = quantities[id];
+      if (quantity > 0) {
+        let produto;
+        for (let categoria of Object.keys(produtos)) {
+          produto = produtos[categoria].find((p) => p.id === id);
+          if (produto) break;
+        }
+        if (produto) {
+          total += produto.Valor * quantity;
+        }
+      }
+    });
+    return total;
+  };
+
   const handleOrder = () => {
     const selectedProducts = [];
 
@@ -202,12 +240,7 @@ export function Produtos() {
 
     if (selectedProducts.length === 0) return;
 
-    const total = selectedProducts.reduce((acc, item) => {
-      const valor = parseFloat(
-        item.split("=").pop().trim().replace("R$ ", "").replace(",", ".")
-      );
-      return acc + valor;
-    }, 0);
+    const total = selectedTotal();
 
     const message = `${selectedProducts.join("\n")}\n\nTotal: ${formatCurrency(
       total
@@ -264,23 +297,4 @@ export function Produtos() {
       </div>
     </section>
   );
-
-  // Função auxiliar para calcular o total sem duplicação
-  function selectedTotal() {
-    let total = 0;
-    Object.keys(quantities).forEach((id) => {
-      const quantity = quantities[id];
-      if (quantity > 0) {
-        let produto;
-        for (let categoria of Object.keys(produtos)) {
-          produto = produtos[categoria].find((p) => p.id === id);
-          if (produto) break;
-        }
-        if (produto) {
-          total += produto.Valor * quantity;
-        }
-      }
-    });
-    return total;
-  }
 }
