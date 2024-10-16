@@ -68,21 +68,21 @@ export function Start() {
             alt="fundo com duas marmitas fit uma sendo segurada na esquerda e a mesma na direita"
           />
           <article className="container-article">
-            <p>Comida boa todo dia</p>
+            <h1>Comida boa todo dia</h1>
           </article>
         </div>
 
         <div className="container-content">
           <img loading="lazy" src={fundo2} alt="Imagem 2" />
           <article className="container-article">
-            <p>Os melhores salgados fit</p>
+            <h1>Os melhores salgados fit</h1>
           </article>
         </div>
 
         <div className="container-content">
           <img loading="lazy" src={fundo3} alt="Imagem 3" />
           <article className="container-article">
-            <p>Os melhores doces fit</p>
+            <h1>Os melhores doces fit</h1>
           </article>
         </div>
       </Carousel>
