@@ -12,7 +12,7 @@ export function Start() {
   return (
     <section className="section-start">
       <Helmet>
-        <title>Nutri e Leve - Marmitas Fitness congeladas</title>
+        <title>Marmitas fitness congeladas | Nutri e leve</title>
         <meta
           name="description"
           content="Marmitas saudáveis, com sabores inegualáveis, a cada semana temos sabores diferentes, venham experimentar as melhores marmitas fit de Brasília."

@@ -59,7 +59,7 @@ export function Menu() {
         <li>
           <RouterLink
             className="button-menu"
-            to="/salgados"
+            to="/salgados-fitness-doces-fitness"
             onClick={closeMenu}
           >
             Salgados & doces fit

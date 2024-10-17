@@ -11,7 +11,7 @@ const router = createBrowserRouter([
   },
 
   {
-    path: "/salgados",
+    path: "/salgados-fitness-doces-fitness",
     element: <SalgadosIndex />,
   },
 ]);

@@ -265,8 +265,8 @@ export function Produtos() {
       <div className="container-sombra-produtos">
         <DietIcons />
         <article className="article-produtos">
-          <h2>Produtos Fit</h2>
-          <h3>Escolha e peça já seus salgados e doces</h3>
+          <h1>Salgados Fitness | Doces Fitness</h1>
+          <h2>Escolha e peça já seus salgados e doces</h2>
         </article>
         <div className="cards-produtos">
           {Object.keys(produtos).map((categoria) => (
