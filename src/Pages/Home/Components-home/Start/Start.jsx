@@ -12,10 +12,10 @@ export function Start() {
   return (
     <section className="section-start">
       <Helmet>
-        <title>Marmitas fitness congeladas | Nutri e leve</title>
+        <title>Marmitas fitness congeladas | Nutri e leve Vicente Pires</title>
         <meta
           name="description"
-          content="Marmitas saudáveis, com sabores inegualáveis, a cada semana temos sabores diferentes, venham experimentar as melhores marmitas fit de Brasília."
+          content="Marmitas saudáveis, com sabores inegualáveis, a cada semana temos sabores diferentes, venham experimentar as melhores marmitas fit de Brasília em Vicente Pires."
         />
         <meta
           name="google-site-verification"
