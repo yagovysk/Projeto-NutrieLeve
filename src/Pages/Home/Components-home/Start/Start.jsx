@@ -65,7 +65,7 @@ export function Start() {
           <img
             loading="lazy"
             src={fundo}
-            alt="fundo com duas marmitas fit uma sendo segurada na esquerda e a mesma na direita"
+            alt="fundo com duas marmitas fitness uma sendo segurada na esquerda e a mesma na direita"
           />
           <article className="container-article">
             <h1>Comida boa todo dia</h1>
