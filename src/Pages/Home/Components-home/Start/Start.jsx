@@ -15,7 +15,7 @@ export function Start() {
         <title>Marmitas fitness congeladas | Nutri e leve Vicente Pires</title>
         <meta
           name="description"
-          content="Marmitas saudáveis, com sabores inegualáveis, a cada semana temos sabores diferentes, venham experimentar as melhores marmitas fit de Brasília em Vicente Pires."
+          content="Marmitas saudáveis, fitness, com sabores inegualáveis, a cada semana temos sabores diferentes, venham experimentar as melhores marmitas fit de Brasília em Vicente Pires."
         />
         <meta
           name="google-site-verification"

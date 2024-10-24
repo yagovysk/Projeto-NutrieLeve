@@ -6,11 +6,11 @@ import "./Marmitas.css";
 
 export function Marmitas() {
   const sabores = [
-    "I - Almôndegas de frango com quinoa ao molho de tomate e queijo, mix de espaguete sem glúten com abobrinha e cenoura. 350g",
-    "II - Lagarto assado, farofa de cuscuz com legumes e azeitonas. 350g",
-    "III - Feijoada saudável (carne de sol, linguiça de frango, filé suíno ), arroz branco, couve refogada. 350g",
-    "IV - Cubos de frango com molho barbecue caseiro, arroz integral com lentilhas e brócolis. 350g",
-    "V - Rocambole de patinho moído recheado com ricota , espinafre e tomate, purê de abóbora e legumes (batata, milho e ervilha). 350g",
+    "I - Picadinho de carne com agrião, arroz integral com cenoura ralada e feijão preto. 350g",
+    "II - Tirinhas de frango com cebola caramelizada, creme de milho, abobrinha grelhada com orégano. 350g",
+    "III - Panqueca com massa sem glúten, recheada com patinho moído, cenoura  e ervilha coberta com molho de tomate e queijo. 350g",
+    "IV - Frango desfiado com azeitona, batata doce assada, mix de legumes com sementes de girassol (cenoura, brócolis, couve flor, semente de abóbora refogados com azeite e alho). 350g",
+    "V - Carne de sol desfiada com cebola,  mandioca cozida, feijão fradinho com vinagrete. 350g",
     "VI - Moqueca de tilápia, arroz de coco, brócolis no vapor. 350g",
     "VII - Tilápia grelhada, legumes assados, purê de batata. 350g",
     "VIII - Tilápia com banana da terra gratinada com molho branco, arroz integral, seleta de legumes. 350g",
@@ -114,7 +114,7 @@ export function Marmitas() {
     <section id="marmitas" className="section-marmitas">
       <div className="container-sombra">
         <article className="article-marmitas">
-          <h1>Marmitas da Semana 22/10 a 28/10</h1>
+          <h1>Marmitas da Semana 29/10 a 04/11</h1>
           <h2>Escolha e peça já suas marmitas</h2>
         </article>
         <div className="card-marmitas">
