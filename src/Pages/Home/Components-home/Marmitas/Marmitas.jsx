@@ -8,7 +8,7 @@ export function Marmitas() {
   const sabores = [
     "I - Patinho moído com tomate cereja, arroz cateto cremoso com abóbora e açafrão, brócolis com azeite e alho. 350g",
     "II - Coxa e sobrecoxa assada, penne de espinafre sem glúten com molho de queijo, cenoura em rodelas com gergelim. 350g",
-    "III - Mexido à mineira Feito com arroz integral, filé suíno, linguiça de frango, arroz integral, feijão vermelho, couve e banana da terra. 350g",
+    "III - Mexido à mineira Feito com arroz integral, filé suíno, linguiça de frango, feijão vermelho, couve e banana da terra. 350g",
     "IV - Tirinhas de alcatra com molho ferrugem, purê de aipim , legumes com lentilhas. 350g",
     "V - Filé de frango à rolê sem bacon, purê de batata, mix de legumes (abobrinha, milho, couve flor). 350g",
     "VI - Moqueca de tilápia, arroz de coco, brócolis no vapor. 350g",
