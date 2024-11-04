@@ -3,7 +3,7 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import foto1 from "../../../../assets/depoiments-1.png";
 import foto2 from "../../../../assets/depoiments-2.png";
-import foto3 from "../../../../assets/depoiments-3.jpg";
+import foto3 from "../../../../assets/depoiments-3.png";
 import { FaGoogle } from "react-icons/fa";
 import "./Depoiments.css";
 
@@ -13,21 +13,21 @@ export function Depoiments() {
   const depoiments = [
     {
       stars: "★★★★★",
-      text: "Só delícias. Podem ir que vale à pena!",
+      text: "Empresa impecável, comida sempre gostosa e ingredientes muito selecionados!!",
       img: foto1,
-      name: "Carla Pinheiro",
+      name: "Isabella Pinho",
     },
     {
       stars: "★★★★★",
-      text: "Empresa impecável, comida sempre gostosa e ingredientes muito selecionados!! Recomendo demaiss!!",
+      text: "Aaaaaamei! Recomendo DEMAAAAIS! Achei toooodos os produtos supeeeeer gostosos, tuuuudo muito bem temperado, sao bem completinhas as marmitas, bolos, empadas, salgados, gostei de ttudo no geral!",
       img: foto2,
-      name: "Tatiana Pinheiro",
+      name: "Mariah Freire",
     },
     {
       stars: "★★★★★",
-      text: "Atendimento perfeito, lanches excelentes!!! Recomendo muito, sem duvidas!",
+      text: "Marmitas deliciosas, o tempero é divino, as melhores marmitas que já comi. O atendimento é maravilhoso também.",
       img: foto3,
-      name: "Matheus Oliveira",
+      name: "Natalia Santos",
     },
   ];
 

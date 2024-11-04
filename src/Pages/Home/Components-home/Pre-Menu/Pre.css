@@ -8,7 +8,8 @@
 }
 .container-pre h2 {
   color: #fff;
-  font-family: "handlee", cursive;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
 }
 .container-buttons {
   display: flex;
@@ -25,6 +26,8 @@
   color: inherit;
 }
 .icon-container span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
   color: #fff;
   transition: 0.4s ease;
 }
@@ -41,10 +44,10 @@
 }
 .icon-container span {
   font-size: 1rem;
-  font-family: "Roboto condensed", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
 }
 
-/* Estilos adicionais para o modal */
 .ReactModal__Overlay {
   background-color: transparent;
 }
@@ -82,7 +85,6 @@
 .container-modal-content ul li {
   border-bottom: dotted 1px black;
 }
-/* Botão de fechar modal */
 .button-modal {
   display: flex;
   justify-content: flex-start;

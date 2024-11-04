@@ -10,12 +10,13 @@
 }
 .title-caldos {
   color: #ffffff;
-  font-family: "handlee", cursive;
+  font-family: "Montserrat", sans-serif;
   font-size: 3rem;
 }
 .section-depoiments h2 {
   color: #0a5247;
-  font-family: "handlee", cursive;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
   font-size: 3rem;
 }
 
@@ -36,7 +37,7 @@
 
 .card-depoiment p {
   width: 20rem;
-  font-family: "Roboto condensed", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .about-perfil {

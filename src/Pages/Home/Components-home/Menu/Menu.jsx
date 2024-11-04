@@ -35,6 +35,17 @@ export function Menu() {
           </Link>
         </li>
         <li>
+          <RouterLink
+            smooth={true}
+            duration={500}
+            className="button-menu"
+            to="/salgados-fitness-doces-fitness"
+            onClick={closeMenu}
+          >
+            Salgados & doces fit
+          </RouterLink>
+        </li>
+        <li>
           <Link
             smooth={true}
             duration={500}
@@ -46,24 +57,9 @@ export function Menu() {
           </Link>
         </li>
         <li>
-          <Link
-            smooth={true}
-            duration={500}
-            className="button-menu"
-            to="depoiments"
-            onClick={closeMenu}
-          >
+          <Link className="button-menu" to="depoiments" onClick={closeMenu}>
             Depoimentos
           </Link>
-        </li>
-        <li>
-          <RouterLink
-            className="button-menu"
-            to="/salgados-fitness-doces-fitness"
-            onClick={closeMenu}
-          >
-            Salgados & doces fit
-          </RouterLink>
         </li>
       </ul>
       {menuOpen && (

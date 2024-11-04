@@ -10,7 +10,8 @@
   padding: 1rem;
 }
 .footer h4 {
-  font-family: "Roboto condensed", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
   color: #fff;
 }
 .article-footer {
@@ -50,8 +51,8 @@
 }
 .tgv-button {
   text-decoration: none;
-  font-family: "Roboto condensed", sans-serif;
-  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
   color: #fff;
   display: flex;
   transition: 0.5s ease;

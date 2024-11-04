@@ -9,12 +9,14 @@
 }
 
 .section-parceiros h3 {
-  font-family: "handlee", cursive;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
   font-size: 3rem;
 }
 
 .section-parceiros h4 {
-  font-family: "handlee", cursive;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
   text-align: center;
   font-size: 2rem;
 }

@@ -1,5 +1,5 @@
 .section-marmitas {
-  background-image: url("../../../../assets/fundo-marmitas.svg");
+  background-image: url("../../../../assets/fundo-nutri.jpg");
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -17,11 +17,16 @@
 
   padding: 1rem;
   border-radius: 15px;
-  font-family: "Playwrite IT Moderna", cursive;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+.article-marmitas h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
 }
 .article-marmitas h2 {
-  font-size: 3rem;
-  font-weight: 700;
+  font-size: 2.5rem;
+  font-weight: 400;
 }
 .article-marmitas h3 {
   font-size: 1.8rem;
@@ -52,8 +57,8 @@
 }
 .marmita p {
   color: #fff;
-  font-family: "Playwrite DE Grund", cursive;
-  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 5 00;
   width: 30rem;
 }
 .marmita span {
@@ -106,7 +111,11 @@
   flex-direction: column;
   justify-content: center;
   color: #fff;
-  font-family: "Playwrite DE Grund", cursive;
+  font-family: "Montserrat", sans-serif;
+}
+.title-caldos {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
 }
 @media (max-width: 768px) {
   .section-marmitas {
