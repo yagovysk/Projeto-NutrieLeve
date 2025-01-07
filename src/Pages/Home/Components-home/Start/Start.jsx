@@ -67,23 +67,56 @@ export function Start() {
             src={fundo}
             alt="fundo com duas marmitas fitness uma sendo segurada na esquerda e a mesma na direita"
           />
-          <article className="container-article">
-            <h1>Comida boa todo dia</h1>
-          </article>
+          <div className="responsive-start">
+            <div className="container-article">
+              <article className="marmita-article">
+                <h1>Estamos com um novo site para pedidos</h1>
+                <a
+                  href="https://www.prefirodelivery.com/nutrielevebsb
+"
+                  target="blank"
+                >
+                  Clique aqui e faça já seu pedido!
+                </a>
+              </article>
+            </div>
+          </div>
         </div>
 
         <div className="container-content">
           <img loading="lazy" src={fundo2} alt="Imagem 2" />
-          <article className="container-article">
-            <h1>Os melhores salgados fit</h1>
-          </article>
+          <div className="responsive-start">
+            <div className="container-article">
+              <article className="marmita-article">
+                <h1>Os melhores salgados fit</h1>
+                <a
+                  href="https://www.prefirodelivery.com/nutrielevebsb
+"
+                  target="blank"
+                >
+                  Clique aqui e faça já seu pedido!
+                </a>
+              </article>
+            </div>
+          </div>
         </div>
 
         <div className="container-content">
           <img loading="lazy" src={fundo3} alt="Imagem 3" />
-          <article className="container-article">
-            <h1>Os melhores doces fit</h1>
-          </article>
+          <div className="responsive-start">
+            <div className="container-article">
+              <article className="marmita-article">
+                <h1>Os melhores doces fit</h1>
+                <a
+                  href="https://www.prefirodelivery.com/nutrielevebsb
+"
+                  target="blank"
+                >
+                  Clique aqui e faça já seu pedido!
+                </a>
+              </article>
+            </div>
+          </div>
         </div>
       </Carousel>
     </section>

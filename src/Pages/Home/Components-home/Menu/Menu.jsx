@@ -24,17 +24,6 @@ export function Menu() {
       </div>
       <ul className={`Menu-ul ${menuOpen ? "open" : ""}`}>
         <li>
-          <Link
-            smooth={true}
-            duration={500}
-            className="button-menu"
-            to="marmitas"
-            onClick={closeMenu}
-          >
-            Marmitas da semana
-          </Link>
-        </li>
-        <li>
           <RouterLink
             smooth={true}
             duration={500}
@@ -72,7 +61,7 @@ export function Menu() {
         className="button"
         target="blank"
       >
-        Entre em contato
+        Tire suas dúvidas!
       </a>
     </nav>
   );

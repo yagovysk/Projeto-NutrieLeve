@@ -39,34 +39,40 @@
   font-size: 2rem;
   color: #fff;
 }
-.marmita-article {
-  position: absolute;
+
+.responsive-start {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: "handlee", cursive;
-  font-size: 2rem;
-  left: 34%;
-  gap: 1rem;
-  top: 10%;
-  color: #fff;
 }
+
 .container-article {
   position: absolute;
   display: flex;
-  flex-direction: column;
   font-family: "handlee", cursive;
   font-size: 2rem;
-  left: 42%;
 
-  top: 50%;
+  top: 40%;
   color: #fff;
 }
-.marmita-article .img-marmita {
-  width: 15rem !important;
-  border-radius: 10px;
+
+.marmita-article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
+
+.marmita-article a {
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s ease;
+}
+
+.marmita-article a:hover {
+  transform: scale(1.05);
+}
+
 .fundo-marmita {
   width: 30rem !important;
 }
@@ -75,12 +81,7 @@
     height: 20vh;
   }
   .marmita-article {
-    left: 32%;
-    font-size: 1.1rem;
-  }
-  .container-article {
-    left: 32%;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
   }
   .arrow-button-left {
     padding: 0.5rem;

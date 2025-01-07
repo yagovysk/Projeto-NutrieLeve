@@ -99,9 +99,9 @@
   .nav-menu {
     display: flex;
     justify-content: flex-start;
-    gap: 4.5rem !important;
+
     height: 100%;
-    gap: 0;
+
     padding: 0.5rem;
   }
   .nav-menu .logo {
